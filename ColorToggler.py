@@ -3,8 +3,6 @@ import time
 
 class ColorChangerCommand(sublime_plugin.TextCommand):
     def run(self, *args):
-        for arg in args:
-            print (arg)
         self.change_color()
     
     def change_color(self):
@@ -23,4 +21,3 @@ class ColorChangerCommand(sublime_plugin.TextCommand):
         #else:
             #settings.set("color_scheme", "Packages/Base16 Color Schemes/base16-colors.dark.tmTheme")
         sublime.save_settings("Preferences.sublime-settings")
-        #print(settings.has("time"))
